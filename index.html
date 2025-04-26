@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Palak Shinde Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #dbeafe, #e9d5ff);
+      color: #333;
+    }
+    .banner {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      color: #4f46e5;
+    }
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: -80px;
+      border: 5px solid white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 1rem 0 0.5rem;
+      font-size: 2.5rem;
+    }
+    header p {
+      max-width: 700px;
+      margin: 1rem auto 0;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    .tab-button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      background-color: #a5b4fc;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .tab-button:hover,
+    .tab-button.active {
+      background-color: #6366f1;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+    .card.active {
+      display: block;
+      grid-column: 1 / -1;
+    }
+    .card h2 {
+      color: #4f46e5;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+    <img src="https://i.ibb.co/8PPbBJP/tech-banner.jpgs" alt="Professional Tech Banner" class="banner" />
+    <div style="text-align:center;">
+      <img src="https://th.bing.com/th/id/OIP.xPmkPYiVIAVACf466XUFTwHaFJ?w=299&h=208&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Professional Avatar" class="profile-pic" />
+    </div>
+    
+  <header>
+    <h1>Palak Shinde</h1>
+    <p>
+      I’m a passionate first-year B.Tech student in Electronics and Telecommunication (ENTC), excited to explore the tech world.
+      As a fresher, I’m eager to learn, grow, and build innovative projects. Though I have no professional experience yet,
+      I believe in consistent effort, curiosity, and hands-on learning to shape my journey in technology.
+    </p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('projects')">Projects</button>
+    <button class="tab-button" onclick="showTab('certificates')">Certificates</button>
+    <button class="tab-button" onclick="showTab('skills')">Skills</button>
+    <button class="tab-button" onclick="showTab('contact')">Contact</button>
+  </div>
+
+  <div class="container">
+    <div class="card active" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/1yWOMl1hOtHOwAH4dXgcCxEIaKpd30fSm/view" target="_blank">
+            EW MULTISIM
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1xsIvurGD0sIOw9NsGf1cy6jCgaXL9vR3/view" target="_blank">
+           DESIGN THINKING (LOCKER ) 
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1yH9lDDW3EJmB21gF7DSdiKOPvR7FbmnW/view" target="_blank">
+            ISA STIMULATION 
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card" id="certificates">
+      <h2>Certificates</h2>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/1KKcSERH1NttmF_WvVcfCYmu0miDeCHP8/view" target="_blank">
+            International Youth Math Competition
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/15IXIEPmG-pDyDo_j6fwJ6l-z8BzvY7xK/view" target="_blank">
+            Python Basics – cisco
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Arduino & Basic Electronics</li>
+        <li>C Programming</li>
+        <li>Python (Beginner)</li>
+        <li>3D Modelling (TinkerCAD / Fusion 360)</li>
+        <li>Problem Solving & Team Collaboration</li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:palak@email.com">palak@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/palak" target="_blank">linkedin.com/in/palak</a></p>
+      <p>GitHub: <a href="https://github.com/palak" target="_blank">github.com/palak</a></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Palak Shinde | All Rights Reserved
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.card').forEach(card => {
+        card.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>

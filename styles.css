@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #dbeafe, #e9d5ff);
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1.5rem;
+    color: #4f46e5;
+  }
+  
+  header h1 {
+    margin: 0.5rem 0 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+  
+  .banner {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .tab-button {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #a5b4fc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .tab-button.active,
+  .tab-button:hover {
+    background-color: #6366f1;
+  }
+  
+  .content {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 1rem 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.4s ease;
+  }
+  
+  .card h2 {
+    color: #4f46e5;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  a {
+    color: #4f46e5;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
